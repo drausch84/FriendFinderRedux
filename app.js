@@ -22,7 +22,7 @@ require("./routing/apiRoutes")(app);
 require("./routing/getRoutes")(app);
 
 /* Start Server */
-const port = 8080;
+const port = process.env.PORT || 8080;
 app.listen(port, () =>{
     console.log("> Server is live and running...");
 });
