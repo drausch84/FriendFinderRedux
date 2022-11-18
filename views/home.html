@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">    
+     <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="16x16">
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="32x32">
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="96x96">
+     <link rel="apple-touch-icon" sizes="72x72" href="friend-favicon.jpeg">
+     <link rel="apple-touch-icon" sizes="114x114" href="friend-favicon.jpeg">
+     <link rel="apple-touch-icon" sizes="152x152" href="friend-favicon.jpeg">
+     <!-- JS-->
+    <script src="home.js" defer></script>
+    <script src="default.js" defer></script>
+
+    <title>FriendFinder Home Page</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class = "main-nav">
+            <div class="hamburger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <a class="home-link" href="/"><img src="friendfinder-logo.png" height="100"  alt="Website Logo"></a></li>
+            <ul class="navLinks">
+                <li><a class="survey-link" href="/survey">Survey</a></li>
+                <li><a class="about-link" href="/about">About FF Redux&trade;</a></li>
+                <li><a class="contact-link" href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="home-container">
+            <div class="home-header-wrapper">
+                <h1 class="home-header">
+                    Friend Finder Redux&trade; <br> 
+                    Your Buddy Is Waiting!
+                </h1>
+                <h1 class="home-header" aria-hidden="true" data-overlay></h1>
+                <p class="about-p">
+                    Take our survey to find your perfect friendship match!  Using state-of-the-art technology paired with the most intriguing
+                    questions that humanity has ever crafted, we help take the stress out of making friends, drinking buddies, compadres, etc.
+                </p>
+                <a href="/survey" class="survey-btn">Take Survey&nbsp;<i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="canv-container">
+                <canvas id="canv" width="32" height="32"></canvas>
+            </div>
+            <div>
+                <img src="friends-hanging.jpeg" class="home-image" alt="Friends Hanging Outside">
+            </div>
+        </div>
+        <div class="home-redirect-div">
+            
+        </div>
+    </header>
+    <footer>
+        <div class="footer-row" id="footer-content">
+            <div class="footer-company-details" id="footer-col">
+                <h1 class="footer-col-h" id="footer-h-1">
+                    Contact Us
+                </h1>
+                <p class="footer-business-info">
+                    <span class="contact-icon"><i class="bi bi-geo-alt-fill">&nbsp;&nbsp;</i></span>Denver, CO
+                    <br>
+                    <span class="contact-icon"><i class="bi bi-envelope-fill">&nbsp;&nbsp;</i></span><a class="footer-business-email" href="mailto:rauschdevelopment.io@gmail.com">rauschdevelopment.io@gmail.com</a>
+                    <br>
+                    <span class="contact-icon"><i class="bi bi-bookmarks-fill"></i></span><a href="/contact" class="footer-col-link" id="footer-contact-link">&nbsp;&nbsp;Contact</a>
+                </p>
+            </div>
+            <div class="social-icons-row">
+                <ul class="social-icons">
+                    <li class="social-li">
+                        <a class="social-link" href="https://twitter.com/RauschDevelop" target="_blank"><span class="social-icon"><i class="bi bi-twitter"></i></span></a>
+                    </li>
+                    <li class="social-li">
+                        <a class="social-link" href="https://www.instagram.com/rauschdevelopment/" target="_blank"><span class="social-icon"><i class="bi bi-instagram"></i></span></a>
+                    </li>
+                    <li class="social-li">
+                        <a class="social-link" href="https://www.linkedin.com/company/rauschdevelopment" target="_blank"><span class="social-icon"><i class="bi bi-linkedin"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row" id="terms-row">
+            <ul class="terms-list">
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-1" href="#">Terms and Conditions</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-2" href="#">Private Policy</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-3" href="#">Cookie Policy</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-4" href="/faq">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-row" id="copyright-row">
+            <div class="copyright">
+                Copyright &copy; 2022 All Rights Reserved by Friend Finder Redux&trade; 
+            </div>
+            <div class="rd-made-by">
+                <p class="rd-made-by-p">
+                    Made with&nbsp; <span class="heart">&#9829;&nbsp;</span>by&nbsp;<a href="https://rauschdevelopment.com" class="rd-link" target="_blank">Rausch Development</a>
+                </p>
+            </div>
+            <div class="scroll-btn-div">
+                <div class="topScroll"><i class="bi bi-arrow-up" id="scoll-icon"></i></div>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>

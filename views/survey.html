@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">    
+     <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="16x16">
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="32x32">
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="96x96">
+     <link rel="apple-touch-icon" sizes="72x72" href="friend-favicon.jpeg">
+     <link rel="apple-touch-icon" sizes="114x114" href="friend-favicon.jpeg">
+     <link rel="apple-touch-icon" sizes="152x152" href="friend-favicon.jpeg">
+     <!-- jQuery Library Import -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- JS-->
+     <script src="survey.js" defer></script>
+    <script src="default.js" defer></script>
+
+    <title>Survey Page</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class = "main-nav">
+            <div class="hamburger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <a class="home-link" href="/"><img src="friendfinder-logo.png" height="100"  alt="Website Logo"></a></li>
+            <ul class="navLinks">
+                <li><a class="survey-link" href="/survey">Survey</a></li>
+                <li><a class="about-link" href="/about">About FF Redux&trade;</a></li>
+                <li><a class="contact-link" href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="home-container">
+            <div class="canv-container">
+                <canvas id="canv" width="32" height="32"></canvas>
+            </div>
+        </div>
+    </header>
+    <div class="survey-container">
+        <img src="friendfinder-logo.png" width="100" height="100" alt="FF Logo">
+        <h1 class="survey-form-h">
+            Friend finder survey
+        </h1>
+        <!-- Question 1 -->
+        <div class="question-container">
+            <label for="question1" class="survey-label" id="ques1-label">Question 1</label>
+            <h3 class="survey-question">
+                Rules were meant to be broken.
+            </h3>
+            <select class="survey-options" id="question1" required>
+                <option value="" disable selected>Choose Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 1 -->
+        <!-- Question 2 -->
+        <div class="question-container">
+            <label for="question2" class="survey-label" id="ques2-label">Question 2</label>
+            <h3 class="survey-question">
+                You always wait for someone to talk to you instead of starting the conversation.
+            </h3>
+            <select class="survey-options" id="question2" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 2 -->
+        <!-- Question 3 -->
+        <div class="question-container">
+            <label for="question3" class="survey-label" id="ques3-label">Question 3</label>
+            <h3 class="survey-question">
+                You prefer intimate settings and try to avoid large crowds and gatherings.
+            </h3>
+            <select class="survey-options" id="question3" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 3 -->
+        <!-- Question 4 -->
+        <div class="question-container">
+            <label for="question4" class="survey-label" id="ques4-label">Question 4</label>
+            <h3 class="survey-question">
+                You tend to lack focus on the task at hand, instead day-dreaming about the future.
+            </h3>
+            <select class="survey-options" id="question4" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 4 -->
+        <!-- Question 5 -->
+        <div class="question-container">
+            <label for="question5" class="survey-label" id="ques5-label">Question 5</label>
+            <h3 class="survey-question">
+                You prefer a hot cup of coffee or tea as opposed to a stiff cocktail or beer.
+            </h3>
+            <select class="survey-options" id="question5" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 5 -->
+        <!-- Question 6 -->
+        <div class="question-container">
+            <label for="question6" class="survey-label" id="ques6-label">Question 6</label>
+            <h3 class="survey-question">
+                You find that noise (music, TV, or a movie playing in the background) helps you sleep better.
+            </h3>
+            <select class="survey-options" id="question6" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 6 -->
+        <!-- Question 7 -->
+        <div class="question-container">
+            <label for="question7" class="survey-label" id="ques7-label">Question 7</label>
+            <h3 class="survey-question">
+                You find yourself deeply affected by the feelings of others.
+            </h3>
+            <select class="survey-options" id="question7" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 7 -->
+        <!-- Question 8 -->
+        <div class="question-container">
+            <label for="question8" class="survey-label" id="ques8-label">Question 8</label>
+            <h3 class="survey-question">
+                At work, your co-workers tend to come to you first for the solution to any problem.
+            </h3>
+            <select class="survey-options" id="question8" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 8 -->
+        <!-- Question 9 -->
+        <div class="question-container">
+            <label for="question9" class="survey-label" id="ques9-label">Question 9</label>
+            <h3 class="survey-question">
+                You frequently attend volunteer events or give to charity.
+            </h3>
+            <select class="survey-options" id="question9" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 9 -->
+        <!-- Question 10 -->
+        <div class="question-container">
+            <label for="question10" class="survey-label" id="ques10-label">Question 10</label>
+            <h3 class="survey-question">
+                It is difficult for you to calm down after someone or something has angered you.
+            </h3>
+            <select class="survey-options" id="question10" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 10 -->
+        <!-- Question 11 -->
+        <div class="question-container">
+            <label for="question11" class="survey-label" id="ques11-label">Question 11</label>
+            <h3 class="survey-question">
+                You have a vivid imagination and are often described as being creative.
+            </h3>
+            <select class="survey-options" id="question11" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 11 -->
+        <!-- Question 12 -->
+        <div class="question-container">
+            <label for="question12" class="survey-label" id="ques12-label">Question 12</label>
+            <h3 class="survey-question">
+                Any schedule changes or alterations to a task causes you to stress and become anxious.
+            </h3>
+            <select class="survey-options" id="question12" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 12 -->
+        <!-- Question 13 -->
+        <div class="question-container">
+            <label for="question13" class="survey-label" id="ques13-label">Question 13</label>
+            <h3 class="survey-question">
+                You rarely procrastinate.
+            </h3>
+            <select class="survey-options" id="question13" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 13 -->
+        <!-- Question 14 -->
+        <div class="question-container">
+            <label for="question14" class="survey-label" id="ques14-label">Question 14</label>
+            <h3 class="survey-question">
+                You thrive under stress and welcome any challenge thrown your way.
+            </h3>
+            <select class="survey-options" id="question14" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 14 -->
+        <!-- Question 15 -->
+        <div class="question-container">
+            <label for="question15" class="survey-label" id="ques15-label">Question 15</label>
+            <h3 class="survey-question">
+                You prefer to collaborate in a group setting instead of working alone.
+            </h3>
+            <select class="survey-options" id="question15" required>
+                <option value="" disable selected>--Choose Option--</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!-- End Question 15 -->
+        <button class="survey-submit-btn" type="submit" name="action" id="surveySubmit">Submit Survey&nbsp;&nbsp;<i class="bi bi-send"></i></button>
+    </div>
+    <div class="modal-bg">
+        <div class="friend-modal">
+            <h1 class="modal-h">
+                Closest Friend Match
+            </h1>
+            <h1 id="userFriendName"></h1>
+            <img id="userFriendImg" width="650" src="">
+            <div class="modal-desc">
+                <p id="userFriendDesc"></p>
+            </div>
+            <div class="modal-footer">
+                <a href="/survey" class="modal-survey-btn">Take Survey Again!</a>
+            </div>
+            <span class="modal-close">X</span>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-row" id="footer-content">
+            <div class="footer-company-details" id="footer-col">
+                <h1 class="footer-col-h" id="footer-h-1">
+                    Contact Us
+                </h1>
+                <p class="footer-business-info">
+                    <span class="contact-icon"><i class="bi bi-geo-alt-fill">&nbsp;&nbsp;</i></span>Denver, CO
+                    <br>
+                    <span class="contact-icon"><i class="bi bi-envelope-fill">&nbsp;&nbsp;</i></span><a class="footer-business-email" href="mailto:rauschdevelopment.io@gmail.com">rauschdevelopment.io@gmail.com</a>
+                    <br>
+                    <span class="contact-icon"><i class="bi bi-bookmarks-fill"></i></span><a href="/contact" class="footer-col-link" id="footer-contact-link">&nbsp;&nbsp;Contact</a>
+                </p>
+            </div>
+            <div class="social-icons-row">
+                <ul class="social-icons">
+                    <li class="social-li">
+                        <a class="social-link" href="https://twitter.com/ArmsAndBranches" target="_blank"><span class="social-icon"><i class="bi bi-twitter"></i></span></a>
+                    </li>
+                    <li class="social-li">
+                        <a class="social-link" href="https://www.instagram.com/arms_and_branches/" target="_blank"><span class="social-icon"><i class="bi bi-instagram"></i></span></a>
+                    </li>
+                    <li class="social-li">
+                        <a class="social-link" href="https://www.linkedin.com/company/arms-and-branches" target="_blank"><span class="social-icon"><i class="bi bi-linkedin"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row" id="terms-row">
+            <ul class="terms-list">
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-1" href="#">Terms and Conditions</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-2" href="#">Private Policy</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-3" href="#">Cookie Policy</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-4" href="/faq">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-row" id="copyright-row">
+            <div class="copyright">
+                Copyright &copy; 2022 All Rights Reserved by Friend Finder Redux&trade; 
+            </div>
+            <div class="rd-made-by">
+                <p class="rd-made-by-p">
+                    Made with&nbsp; <span class="heart">&#9829;&nbsp;</span>by&nbsp;<a href="https://rauschdevelopment.com" class="rd-link" target="_blank">Rausch Development</a>
+                </p>
+            </div>
+            <div class="scroll-btn-div">
+                <div class="topScroll"><i class="bi bi-arrow-up" id="scoll-icon"></i></div>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>

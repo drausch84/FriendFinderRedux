@@ -1,0 +1,18 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Application for users to find their perfect friend based on survey questions and answers",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}

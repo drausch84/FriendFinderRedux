@@ -1,0 +1,751 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    margin:0;
+}
+/*** Nav CSS ***/
+nav{
+    height: 7rem;
+    width: 100vw;
+    display: flex;
+}
+.navLinks{
+    list-style: none;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    gap:5%;
+    text-transform: uppercase;
+    width: 55vw;
+    margin-left:650px;
+    margin-top:30px;
+    padding: 0 0.7vw;
+}
+.navLinks li{
+    position: relative;
+}
+.navLinks li a{
+    text-decoration:none;
+    color: brown;
+    font-family:'Raleway', sans-serif;
+    font-weight: 800;
+    font-size:1.4em;
+}
+.navLinks li a:hover{
+  color:#fff;
+  transition: all ease-in-out 150ms;
+}
+/*** End Nav CSS ***/
+
+/*** Footer CSS ***/
+footer{
+    background-color:#c594E2;
+    border-top:lightgray 1px solid;
+    border-bottom:lightgray 1px solid;
+    display:block;
+    padding: 30px 30px 20px 30px;
+    width:100%;
+  }
+  .logo-row{
+    padding:0;
+    margin:auto;
+    width:70%;
+    text-align: center;
+    border-bottom:#fff 1px solid;
+  }
+  .footer-company-logo{
+    color:#fff;
+    font-family:'Raleway',sans-serif;
+    font-size:4em;
+    margin-bottom:0.3em;
+  }
+  .footer-row{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    margin-top:35px;
+    padding-bottom:25px;
+  }
+  #footer-content{
+    border-bottom:#fff 1px solid;
+  }
+  #footer-col{
+    width:23.5%;
+  }
+  .footer-business-info{
+    color:#fff;
+    font-family:'Raleway', sans-serif;
+    line-height:25px;
+    margin-top:25px;
+    font-size:0.9em;
+  }
+  .contact-icon{
+    color:#fff;
+  }
+  .footer-policy-link{
+    text-decoration:none;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+  }
+  .footer-policy-link:hover{
+    color:#247569;
+    transition: color 150ms ease-in-out;
+  }
+  .footer-business-email{
+    text-decoration: none;
+    color:#fff;
+  }
+  .footer-business-email:hover{
+    color:brown;
+    transition: color 150ms ease-in-out;
+  }
+  .footer-col-h{
+    font-family: 'Poppins',sans-serif;
+    color:#fff;
+    font-size:2.1em;
+  }
+  .footer-col-p{
+    margin-top:20px;
+    line-height:28px;
+    font-size:1.2em;
+  }
+  .footer-col-link{
+    text-decoration:none;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+  }
+  .footer-col-link:hover{
+    color:brown;
+    transition: color 150ms ease-in-out;
+  }
+  .footer-about-div{
+    display:flex;
+    flex-direction: column;
+  }
+  .social-icons-row{
+    width:10%;
+    margin-top:70px;
+  }
+  .social-icons{
+    list-style:none;
+    display:inline-flex;
+    padding-left:0;
+    gap:15%;
+  }
+  .social-li{
+    padding-right:12px;
+    margin-bottom:60px;
+  }
+  .social-link{
+    border:#fff 2px solid;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    font-size: 18px;
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    padding: 17px 18px 14px 18px;
+  }
+  .social-link:hover{
+    border:brown 2px solid;
+    color:brown;
+    transition: 150ms ease-in-out;
+  }
+  .terms-list{
+    list-style: none;
+    display:inline-flex;
+    padding-left:0;
+  }
+  .terms-li{
+    padding-right:50px;
+  }
+  .terms-link{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-family:'Raleway', sans-serif;
+  }
+  .terms-link:hover{
+    color:brown;
+    transition: color 150ms ease-in-out;
+  }
+  #copyright-row{
+    padding:0;
+  }
+  .copyright{
+    color:#fff;
+    font-family:'Raleway', sans-serif;
+    font-size:1.2em;
+    width:73%;
+  }
+  .rd-made-by{
+    width:22%
+  }
+  .rd-made-by-p{
+    color:#fff;
+    font-family:'Raleway', sans-serif;
+    font-size:1.2em;
+  
+  }
+  .rd-made-by-p > a{
+    text-decoration: none;
+    color:#fff;
+  }
+  .rd-link:hover{
+    color:brown;
+    transition: color 150ms ease-in-out;
+  }
+  .heart{
+    color:brown;
+  }
+  .scroll-btn-div{
+    display:flex;
+    justify-content: center;
+  }
+  .topScroll{
+    background:transparent;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+    transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; 
+  }
+  .topScroll:hover{
+    -moz-transition: opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    opacity: 0.6;
+  }
+/*** End Footer CSS ***/
+
+/*** Home Page CSS ***/
+.home-div{
+    display:flex;
+}
+.hero{
+    position:relative;
+    isolation:isolate;
+    padding:1em;
+}
+.home-container{
+    margin-inline: auto;
+    max-width:90rem;
+    display:flex;
+    margin-bottom:200px;
+}
+.canv-container{
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    height:45vh;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
+}
+#canv{
+    width:100%;
+    height:100%;
+}
+.home-header-wrapper{
+    position:relative;
+    margin-block:1rem;
+ 
+}
+.home-header{
+    font-size:4em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family:'Poppins', sans-serif;
+    max-width:17ch;
+    color: #3a3a3a;
+    mix-blend-mode: color-burn;
+    margin:0;
+}
+.home-header[data-overlay]{
+    position:absolute;
+    left:0;
+    top:-90px;
+    mix-blend-mode: revert;
+    color:#111;
+    z-index:2;
+    opacity:0.4;
+}
+.about-p{
+    font-family:'Raleway', sans-serif;
+    font-size:1.4em;
+    line-height:1.7em;
+    margin-top:45px;
+    margin-bottom:50px;
+    max-width: 50ch;
+}
+.survey-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: #b883ac;
+    color:#fff;
+    font-family:'Poppins', sans-serif;
+    font-size:1.2em;
+}
+.survey-btn:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+}
+.home-image{
+    height:600px;
+    border-radius:10px;
+    margin-top:100px;
+}
+/** Home Page Media Queries **/
+/* Mobile Queries */
+@media screen and (max-device-width: 640px) { 
+
+}
+/* End Mobile Queries */
+/* Tablet Queries */
+@media screen and (min-device-width: 768px) 
+  
+  and (max-device-width: 1024px) { 
+
+}
+/* End Tablet Queries */
+/* Tablet Landscape Queries */
+@media only screen 
+    and (min-device-width: 800px) 
+    and (max-device-width: 1100px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (orientation: landscape){
+
+}
+/* End Tablet Landscape Queries */
+/** End Home Page Media Queries **/
+/*** End Home Page CSS ***/
+
+/*** Survey Page CSS ***/
+.survey-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index:2;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding:20px 100px;
+    padding-bottom:80px;
+    width:1100px;
+    margin-left:360px;
+    margin-bottom:100px;
+    border-radius:6px;
+}
+.survey-form-h{
+    font-family: 'Poppins', sans-serif;
+    font-size:4em;
+    color:#b883ac;
+    text-transform: uppercase;
+    margin-top:40px;
+    margin-bottom:80px;
+}
+.question-container{
+    display:flex;
+    flex-direction: column;
+    align-self:flex-start;
+}
+.survey-label{
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:2.1em;
+    margin-bottom:30px;
+    max-width:10ch;
+    color:#b883ac;
+}
+.survey-question{
+    font-family:'Raleway', sans-serif;
+    font-size:1.4em;
+    margin-bottom:30px;
+    border-bottom:0.5px solid brown;
+    max-width:700px;
+    line-height:1.5em;
+    color:#111439;
+    padding-bottom:10px;
+}
+.survey-options{
+    border:0.5px solid brown;
+    max-width:200px;
+    background-color: #fff;
+    font-size:1em;
+    padding:5px;
+    margin-bottom:40px;
+    border-radius:5px;
+    font-family:'Raleway', sans-serif;
+    outline: 0;
+}
+.survey-submit-btn{
+    margin-top:40px;
+    margin-bottom:70px;
+    outline:none;
+    border:none;
+    background-color:brown;
+    font-family:'Raleway',sans-serif;
+    font-size:1.4em;
+    color:#fff;
+    padding:12px;
+    border-radius:26px;
+    width:300px;
+    cursor: pointer;
+}
+.survey-submit-btn:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+}
+/** Survey Page Media Queries **/
+/* Mobile Queries */
+@media screen and (max-device-width: 640px) { 
+
+}
+/* End Mobile Queries */
+/* Tablet Queries */
+@media screen and (min-device-width: 768px) 
+  
+  and (max-device-width: 1024px) { 
+
+}
+/* End Tablet Queries */
+/* Tablet Landscape Queries */
+@media only screen 
+    and (min-device-width: 800px) 
+    and (max-device-width: 1100px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (orientation: landscape){
+
+}
+/* End Tablet Landscape Queries */
+/** End Survey Page Media Queries **/
+/*** End Survey Page CSS ***/
+
+/*** Survey Page Modal CSS ***/
+.modal-bg{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:3;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal-bg-active{
+    visibility: visible;
+    opacity:1;
+}
+.friend-modal{
+    background-color: #fff;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    border:1px solid #36454F;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:70px;
+    width:1000px;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+}
+.modal-h{
+    font-family: 'Poppins', sans-serif;
+    font-weight:300;
+    font-size:4em;
+    margin-bottom:25px;
+    margin-top:45px;
+    max-width:20ch;
+    border-bottom:0.5px solid black;
+}
+#userFriendName{
+    font-family:'Raleway', sans-serif;
+    font-size:2em;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+#userFriendImg{
+    max-height: 450px;
+}
+.modal-desc{
+    margin-top:40px;
+}
+#userFriendDesc{
+    font-family:'Raleway', sans-serif;
+    font-size:1.2em;
+    line-height:1.5em;
+}
+.modal-footer{
+    margin-top:50px;
+}
+.modal-survey-btn{
+    text-decoration: none;
+    background-color: #fff;
+    color:gray;
+    outline:none;
+    font-family:'Poppins', sans-serif;
+    font-size:1.4em;
+    padding:10px 30px;
+    border-radius:5px;
+    cursor: pointer;
+    border:2px lightgray solid;
+}
+.modal-survey-btn:hover{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    border:2px gray solid;
+    transition: all ease-in-out 150ms;
+}
+.modal-close{
+    position:absolute;
+    font-family:'Raleway', sans-serif;
+    color:gray;
+    font-size:1.4em;
+    top:10px;
+    right:20px;
+    font-weight:bold;
+    cursor: pointer;
+}
+/*** End Survey Page Modal CSS ***/
+
+/*** 404 Page CSS ***/
+.body-404{
+    background-color: #ebecee;
+}
+.pnf-container{
+    margin-top:100px;
+    display:flex;
+    gap:2%;
+}
+.pnf-img-container{
+    display:flex;
+    flex-direction: column;
+}
+.pnf-h{
+    font-family:'Poppins', sans-serif;
+    font-size:12em;
+    color:#323e4a;
+    max-width:3ch;
+    text-align:center;
+    margin-left:170px;
+    text-shadow: 4px 4px brown;
+}
+.pnf-img{
+    height:400px;
+}
+.pnf-phases{
+    display:flex;
+    width:100%;
+    gap:4%;
+}
+.pnf-col{
+    display:flex;
+    flex-direction: column;
+}
+.pnf-col-h{
+    margin-top:40px;
+    font-family:'Poppins', sans-serif;
+    font-size:4em;
+    color:#323e4a;
+    max-width:7ch;
+    border-bottom:3px solid black;
+    margin-bottom:20px;
+}
+.phase-num{
+    font-size:1.3em;
+}
+.pnf-p{
+    font-family:'Raleway', sans-serif;
+    font-size:1.8em;
+    text-align:center;
+    margin-top:50px;
+    color:brown;
+}
+.pnf-p-2{
+    text-align:center;
+    font-family:'Raleway', sans-serif;
+    font-size:8em;
+    color:brown;
+}
+.pnf-p-3{
+    text-align:center;
+    font-family:'Raleway', sans-serif;
+    font-weight:700;
+    font-size:4em;
+    color:brown;
+}
+.home-redirect-link{
+    color:brown;
+}
+.home-redirect-link:hover{
+    filter: brightness(150%);
+    transition: all ease-in-out 150ms;
+}
+/** 404 Page Media Queries **/
+/* Mobile Queries */
+@media screen and (max-device-width: 640px) { 
+
+}
+/* End Mobile Queries */
+/* Tablet Queries */
+@media screen and (min-device-width: 768px) 
+  
+  and (max-device-width: 1024px) { 
+
+}
+/* End Tablet Queries */
+/* Tablet Landscape Queries */
+@media only screen 
+    and (min-device-width: 800px) 
+    and (max-device-width: 1100px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (orientation: landscape){
+
+}
+/* End Tablet Landscape Queries */
+/** End 404 Page Media Queries **/
+/*** End 404 Page CSS ***/
+
+/*** About Page CSS ***/
+.about-container{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:50px;
+}
+.about-h{
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size:4em;
+    color:brown;
+}
+.about-info{
+    display:flex;
+    margin-top:40px;
+    margin-bottom:40px;
+    gap:10%;
+}
+.about-info-2{
+    display:flex;
+    margin-top:40px;
+    margin-bottom:40px;
+    gap:8%;
+    margin-top:80px;
+}
+.about-par{
+    display:flex;
+}
+.about-par-2{
+    display:flex;
+}
+.history-p{
+    font-family:'Raleway', sans-serif;
+    font-size:1.3em;
+    line-height:1.7em;
+    margin-top:45px;
+    margin-bottom:50px;
+    max-width: 50ch;
+    margin-left:50px;
+}
+.arrow-img{
+    margin-top:150px;
+    margin-left:40px;
+    height:140px;
+    width:150px;
+}
+.arrow-img-2{
+    height:140px;
+    width:150px;
+    margin-top:150px;
+    margin-left:40px;
+    transform:rotate(180deg);
+}
+.about-img{
+    height:500px;
+    width:620px;
+}
+.about-img-2{
+    height:500px;
+    width:620px;
+    margin-left:50px;
+}
+.old-ff-link{
+    color:brown;
+    text-decoration: none;
+}
+.old-ff-link:hover{
+    filter: brightness(150%);
+    transition: all ease-in-out 150ms;
+}
+/** About Page Media Queries **/
+/* Mobile Queries */
+@media screen and (max-device-width: 640px) { 
+
+}
+/* End Mobile Queries */
+/* Tablet Queries */
+@media screen and (min-device-width: 768px) 
+  
+  and (max-device-width: 1024px) { 
+
+}
+/* End Tablet Queries */
+/* Tablet Landscape Queries */
+@media only screen 
+    and (min-device-width: 800px) 
+    and (max-device-width: 1100px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (orientation: landscape){
+
+}
+/* End Tablet Landscape Queries */
+/** End About Page Media Queries **/
+/*** End About Page CSS ***/
+
+/*** Contact Page CSS ***/
+/** Contact Page Media Queries **/
+/* Mobile Queries */
+@media screen and (max-device-width: 640px) { 
+
+}
+/* End Mobile Queries */
+/* Tablet Queries */
+@media screen and (min-device-width: 768px) 
+  
+  and (max-device-width: 1024px) { 
+
+}
+/* End Tablet Queries */
+/* Tablet Landscape Queries */
+@media only screen 
+    and (min-device-width: 800px) 
+    and (max-device-width: 1100px) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    and (orientation: landscape){
+
+}
+/* End Tablet Landscape Queries */
+/** End Contact Page Media Queries **/
+/*** End Contact Page CSS ***/

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">    
+     <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="16x16">
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="32x32">
+     <link rel="icon" type="image/x-icon" href="friend-favicon.jpeg" sizes="96x96">
+     <link rel="apple-touch-icon" sizes="72x72" href="friend-favicon.jpeg">
+     <link rel="apple-touch-icon" sizes="114x114" href="friend-favicon.jpeg">
+     <link rel="apple-touch-icon" sizes="152x152" href="friend-favicon.jpeg">
+     <!-- JS-->
+    <script src="default.js" defer></script>
+    <script src="about.js" defer></script>
+
+    <title>About Page</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class = "main-nav">
+            <div class="hamburger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <a class="home-link" href="/"><img src="friendfinder-logo.png" height="100"  alt="Website Logo"></a></li>
+            <ul class="navLinks">
+                <li><a class="survey-link" href="/survey">Survey</a></li>
+                <li><a class="about-link" href="/about">About FF Redux&trade;</a></li>
+                <li><a class="contact-link" href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="home-container">
+            <div class="canv-container">
+                <canvas id="canv" width="32" height="32"></canvas>
+            </div>
+        </div>
+    </header>
+    <div class="about-container">
+        <h1 class="about-h">
+            A simple boot camp project
+        </h1>
+        <div class="about-info">
+            <div class="about-par">
+                <p class="history-p">
+                    When I attended a coding boot camp at the <i>University of Denver</i>, one of our first projects, when learning how to work with jQuery and Node.js, was
+                    to create an application where the user would answer a series of survey questions and would receive a friendship match based on the total score of his or
+                    her answers. While the project had no issues in its functionality, the appearance left a lot to be desired, to say the least. In the time since I first
+                    programmed the original Friend Finder application, my web development skills have grown substantially.
+                </p>
+                <img src="brownarrow.png" class="arrow-img" alt="Brush stroke brown arrow">
+            </div>
+           
+
+            <img src="OLD-FriendFinder.png" class="about-img" alt="Old Friend Finder Program">
+        </div>
+        <div class="about-info-2">
+            <img src="Old-FriendFinder2.png" class="about-img-2" alt="Old Friend Finder Program Survey">
+            <div class="about-par-2">
+                <img src="brownarrow.png" class="arrow-img-2" alt="Brush stroke brown arrow">
+                <p class="history-p">
+                    I found myself embarrassed by the look and feel of the original Friend Finder and I decided to revisit it and make it better.  This includes more appealing
+                    and complex CSS, a more organized project approach, and better functionality.  I also made sure to offer more friend choices and better questions, all in the 
+                    hopes of making a better product.  As a software engineer, I apply all of my technical expertise to ensure that the products I develop are not only
+                    working as they are intended to, but they maintain optimal UI/UX.
+                    If you are at all curious about the difference between the original Friend Finder and Friend Finder Redux&reg;, please click 
+                    <a href="https://lit-temple-87580.herokuapp.com/" class="old-ff-link" target="_blank">here</a> to see the difference.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-row" id="footer-content">
+            <div class="footer-company-details" id="footer-col">
+                <h1 class="footer-col-h" id="footer-h-1">
+                    Contact Us
+                </h1>
+                <p class="footer-business-info">
+                    <span class="contact-icon"><i class="bi bi-geo-alt-fill">&nbsp;&nbsp;</i></span>Denver, CO
+                    <br>
+                    <span class="contact-icon"><i class="bi bi-envelope-fill">&nbsp;&nbsp;</i></span><a class="footer-business-email" href="mailto:rauschdevelopment.io@gmail.com">rauschdevelopment.io@gmail.com</a>
+                    <br>
+                    <span class="contact-icon"><i class="bi bi-bookmarks-fill"></i></span><a href="/contact" class="footer-col-link" id="footer-contact-link">&nbsp;&nbsp;Contact</a>
+                </p>
+            </div>
+            <div class="social-icons-row">
+                <ul class="social-icons">
+                    <li class="social-li">
+                        <a class="social-link" href="https://twitter.com/ArmsAndBranches" target="_blank"><span class="social-icon"><i class="bi bi-twitter"></i></span></a>
+                    </li>
+                    <li class="social-li">
+                        <a class="social-link" href="https://www.instagram.com/arms_and_branches/" target="_blank"><span class="social-icon"><i class="bi bi-instagram"></i></span></a>
+                    </li>
+                    <li class="social-li">
+                        <a class="social-link" href="https://www.linkedin.com/company/arms-and-branches" target="_blank"><span class="social-icon"><i class="bi bi-linkedin"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row" id="terms-row">
+            <ul class="terms-list">
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-1" href="#">Terms and Conditions</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-2" href="#">Private Policy</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-3" href="#">Cookie Policy</a>
+                </li>
+                <li class="terms-li">
+                    <a class="terms-link" id="terms-link-4" href="/faq">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-row" id="copyright-row">
+            <div class="copyright">
+                Copyright &copy; 2022 All Rights Reserved by Friend Finder Redux&trade; 
+            </div>
+            <div class="rd-made-by">
+                <p class="rd-made-by-p">
+                    Made with&nbsp; <span class="heart">&#9829;&nbsp;</span>by&nbsp;<a href="https://rauschdevelopment.com" class="rd-link" target="_blank">Rausch Development</a>
+                </p>
+            </div>
+            <div class="scroll-btn-div">
+                <div class="topScroll"><i class="bi bi-arrow-up" id="scoll-icon"></i></div>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>
