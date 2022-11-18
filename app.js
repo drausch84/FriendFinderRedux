@@ -1,5 +1,3 @@
-/* Import dotenv for user vars */
-require('dotenv').config();
 /* Import Express for Route Handling */
 const express = require('express');
 /* Import Body Parser */
@@ -24,7 +22,7 @@ require("./routing/apiRoutes")(app);
 require("./routing/getRoutes")(app);
 
 /* Start Server */
-const port = process.env.PORT;
+const port = 8080;
 app.listen(port, () =>{
     console.log("> Server is live and running...");
 });
