@@ -4,7 +4,7 @@
   "description": "Application for users to find their perfect friend based on survey questions and answers",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
