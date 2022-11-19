@@ -61,7 +61,7 @@
                 Rules were meant to be broken.
             </h3>
             <select class="survey-options" id="question1" required>
-                <option value="" disable selected>Choose Option</option>
+                <option value="" disable selected>--Choose Option--</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -308,6 +308,20 @@
             </div>
             <div class="modal-footer">
                 <a href="/survey" class="modal-survey-btn">Take Survey Again!</a>
+            </div>
+            <span class="modal-close">X</span>
+        </div>
+    </div>
+    <!-- TODO: make a modal to pop up if user doesn't enter every select input -->
+    <div class="survey-alert-modal">
+        <div class="alert-modal">
+            <h1 class="alertModal-h">
+                Survey Incomplete
+            </h1>
+            <div class="modal-desc">
+                <p class="alertModal-p">
+                    Please complete the survey, you may have accidently missed a question or 2......or more.
+                </p>
             </div>
             <span class="modal-close">X</span>
         </div>

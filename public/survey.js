@@ -36,9 +36,21 @@ run();
 //When the submit btn is clicked, the modal is made visible (opened)
 jQuery('#surveySubmit').on('click', function(e){
     e.preventDefault();
-    console.log('Survey submitted');
-    //gather user input
-    const userInput = {
+    //validate the survey, ensuring each question was answered (no empty strings)
+    function surveyValidate(){
+      let isValid = true;
+      jQuery('.survey-options').each(function(){
+        if(jQuery(this).val() === ""){
+          isValid = false;
+        }
+      })
+      return isValid;
+    }
+
+    //validate survey and gather user input
+    if(surveyValidate()){
+      console.log('Survey submitted');
+      const userInput = {
         name: jQuery('#userFriendName').val().trim(),
         photo: jQuery('#userFriendImg').val().trim(),
         description: jQuery('#userFriendDesc').val().trim(),
@@ -71,9 +83,16 @@ jQuery('#surveySubmit').on('click', function(e){
         jQuery('.modal-bg').addClass('modal-bg-active');
         console.log('Modal Opened');
     });
+    } else {
+      console.log("User didn't complete survey");
+      //add active class to make alert modal visible
+      jQuery(".survey-alert-modal").addClass("survey-alert-modal-active");
+      console.log("Alert Modal Opened");      
+    }
 });
 //When the close modal btn (X) is clicked, the modal removes active class and is no longer visible
 jQuery('.modal-close').on('click', function(){
     jQuery('.modal-bg').removeClass('modal-bg-active');
+    jQuery('.survey-alert-modal').removeClass('survey-alert-modal-active');
     console.log('Modal Closed');
 });
